@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignmnent 1 JS</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body style="width: 80%; border: 2px solid black; margin: 40px auto; padding: 20px; height: auto; ">
+       <div class="tab"> <button   class="tablink" onclick="openPage('one', this, 'rgb(232, 255, 169)')" id="defaultOpen"><b>Register</b></button>
+        <button class="tablink" onclick="openPage('two', this, 'rgb(255, 203, 211)')" ><b>Check Details</b></button>
+        <button class="tablink" onclick="openPage('three', this, 'rgb(208, 239, 250)')"><b>Confirmation</b></button></div>
+        <div id="one" class="tabcontent">
+                        <h1><u><center><br> Registration Form </center></u></h1>
+                        <form  autocomplete="off" >
+                                <div class="flex-container" style="margin-top:30px;" >
+                                        <div  style="width: 20%; text-align: right;   padding:5px; "><b>Name:</b></div>
+                                        <div  style="width: 44%;    "><input type="text" id="Name" style="width: 98%; padding:5px; background-color: transparent; border:2px solid black; border-radius: 12px;" name="jt2" required></div>
+                                        <div  class="reqError" style="width: 33%;     min-height: 20px;" id="RN" ></div>
+                                </div><br>
+                                <div class="flex-container" >
+                                        <div  style="width: 20%; text-align: right;    padding:5px;"><b>Email ID: </b></div>
+                                        <div  style="width: 44%;    "><input type="text" id="Address" style="width: 98%;  padding:5px; background-color: transparent; border:2px solid black; border-radius: 12px;" required></div>
+                                        <div  class="reqError" style="width: 33%;     min-height: 20px;" id="RA" ></div>
+                                </div><br>
+                        <div class="flex-container" >
+                                <div  style="width: 20%; text-align: right;      padding:5px;"><b>Country: </b></div>
+                                <div class="autocomplete" style="width: 44%;    "><input style="width: 98%;  padding:5px; background-color: transparent; border:2px solid black; border-radius: 12px;" autocomplete="on" type="text" list="datalist" onkeyup="ac(this.value)" required> 
+                                     <datalist id="datalist">    </datalist> 
+                                </div>
+                                <div  class="reqError" style="width: 33%;     min-height: 20px;" id="RC" ></div>
+                        </div>
+                        <br>
+                        <div class="flex-container" >
+                                <div  style="width: 20%; text-align: right;   padding:5px;"><b>Gender: </b></div>
+                                <div  style="width: 44%; margin-top: 5px;">
+                                <input type="radio" id="male" name="gender" value="male" required>
+                                        <label for="male"><b>Male</b></label>
+                                        <input type="radio" id="female" name="gender" value="female" style="margin-left:8vw;" required>
+                                        <label for="female"><b>Female</b></label>
+                                        <input type="radio" id="other" name="gender" value="other" style="margin-left:8vw ;" required>
+                                        <label for="other"><b>Other</b></label></div>
+                                        <div  class="reqError" style="width: 33%;     min-height: 20px;" id="CB" ></div>
+                        </div>
+                        <div class="flex-container" style="margin-top: 15px;" >
+                                <div  style="width: 20%; text-align: right;     padding:5px; "><b>Mob No.:</b></div>
+                                <div  style="width: 44%;    "><input type="text" id="mob" style="width: 98%;  padding:5px; background-color: transparent; border:2px solid black; border-radius: 12px;" required></div>
+                                <div  class="reqError" style="width: 33%;     min-height: 20px;  padding:5px; background-color: transparent;" id="m" ></div>
+                                </div><br>
+                                <div class="flex-container" >
+                                <div  style="width: 20%; text-align: right;     padding:5px; " ><b>Age: </b></div>
+                                <div  style="width: 44%;    "><input type="text" id="AAA" style="width: 98%;  padding:5px; background-color: transparent; border:2px solid black; border-radius: 12px;" min="5" max="110" required></div>
+                                <div  class="reqError" style="width: 33%;     min-height: 20px;" id="AA" ></div>
+                                </div><br>
+                                <div class="flex-container" >
+                                <div  style="width: 20%; text-align: right;       padding:5px; "><b>Voter ID: </b></div>
+                                <div  style="width: 44%;    "><input type="text" id="VD"  style="width: 98%; padding:5px; background-color: transparent; border:2px solid black; border-radius: 12px; " name="jt1">      
+                                </div>
+                                <div  class="reqError" style="width: 33%;     min-height: 20px;" id="VDD" ></div>
+                                </div><br>
+                                        <div class="flex-container">
+                                        <div   style="margin-top: 10px; width: 20%; text-align: right;" ><b>Contact Details:</b></div>
+                                        <div style="width: 78%; margin-top:5px;"><button style=" padding:5px; padding-left:25px; padding-right:25px;  background-color: gray; color:white; border-radius: 12px; " onclick="addCode()">Add Contact</button></div>
+                                        </div>
+                                        <div class="flex-container" style="margin-top: 20px; " >
+                                                <div style="width: 20%; text-align: right;    padding:5px;"><b>Name:</b></div>
+                                                <div  onclick="hi()"  style="width: 44%;    "><input type="text"  id="Name1" style="width: 98%;  padding:5px; background-color: transparent; border:2px solid black; border-radius: 12px;" required></div>
+                                                <div  class="reqError" style="width: 33%;     min-height: 20px;" id="RN1" ></div>
+                                                </div><br>
+                                                <div class="flex-container" >
+                                                <div  style="width: 20%; text-align: right;      padding:5px; "><b>Email ID: </b></div>
+                                                <div  style="width: 44%;    "><input type="text"  id="Address1" style="width: 98%;  padding:5px; background-color: transparent; border:2px solid black; border-radius: 12px;"   required></div>
+                                                <div  class="reqError" style="width: 33%;     min-height: 20px;" id="RA1" ></div>
+                                                </div><br>
+                                                <div class="flex-container" >
+                                                <div  style="width: 20%; text-align: right;     padding:5px;"><b>Relationship: </b></div>
+                                                <div  style="width: 44%;    "><input type="text" id="Name2"  style="width: 98%;  padding:5px; background-color: transparent; border:2px solid black; border-radius: 12px;" required>      
+                                                </div>
+                                                <div  class="reqError" style="width: 33%;     min-height: 20px;" id="RN2" ></div>
+                                                </div>
+                                <div id="myDiv" style="margin-top: 20px; display: none;">
+                                <hr>
+                                        <div class="flex-container" >
+                                        <div style="width: 20%; text-align: right;      padding:5px; "><b>Name:</b></div>
+                                        <div   style="width: 44%;    "><input pattern="[A-Za-z ]{}" type="text"  style="width: 98%;  padding:5px; background-color: transparent; border:2px solid black; border-radius: 12px;" required></div>
+                                        <div  class="reqError" style="width: 33%;     min-height: 20px;" ></div>
+                                        </div><br>
+                                        <div class="flex-container" >
+                                        <div  style="width: 20%; text-align: right;     padding:5px; "><b>Email ID: </b></div>
+                                        <div  style="width: 44%;    "><input type="text"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  style="width: 98%;  padding:5px; background-color: transparent; border:2px solid black; border-radius: 12px;" required></div>
+                                        <div  class="reqError" style="width: 33%;     min-height: 20px;"  ></div>
+                                        </div><br>
+                                        <div class="flex-container" >
+                                        <div  style="width: 20%; text-align: right;    padding:5px; "><b>Relationship: </b></div>
+                                        <div  style="width: 44%;    "><input pattern="[A-Za-z ]{}" type="text" id="Name2"  style="width: 98%;  padding:5px; background-color: transparent; border:2px solid black; border-radius: 12px;" required>      
+                                        </div>
+                                        <div  class="reqError" style="width: 33%;     min-height: 20px;" id="RN2" ></div>
+                                        </div>
+                        </div>
+                        <div id="myDivs"></div>
+                        <center><button style="width: 50%; padding: 10px; margin-top: 30px; background-color: gray; color:white; border-radius: 18px; font-size: 2vw; " onclick="checkReqFields()"><b>Submit</b></button></center>
+                        </form>
+     </div>
+
+
+              <div id="two" class="tabcontent">
+               <div style="margin-top: 50px !important ; padding: 10px; ">
+                   <center>Details Submitted in Register Tab will be shown here for ReCheck and option to Edit.</center> 
+               </div>
+              </div>
+              
+              <div id="three" class="tabcontent">
+                <div style="margin-top: 50px !important ; padding: 10px; ">
+                        <center>Confirmation and Option to Receive Copy of Form on Mail ID will be provided here.</center> 
+                    </div>
+              </div>
+              <script src=script.js></script>
+</body>
+</html>
