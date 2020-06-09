@@ -1,0 +1,64 @@
+
+
+.reqError{
+    color: #ff0000; /*Red Color*/
+    font-weight: bold;
+}
+.flex-container {
+   width: 100%;
+    height: auto;
+    overflow: hidden;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+  
+  }
+  .flex-container > div {
+    float: left; 
+    height:auto;
+  }
+  
+  * {box-sizing: border-box}
+
+ 
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .tablink {
+    background-color: rgb(158, 153, 153);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 33.33%;
+  }
+  
+  .tablink:hover {
+    background-color: rgb(201, 186, 186);
+  }
+  
+  .tabcontent {
+
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    height: 100%;
+    border:1px solid black
+  }
+  
+.tab button {
+border: 1px solid gray;
+  color: black;
+  }
+
+
+  #one {background-color: rgb(232, 255, 169);}
+  #two {background-color: rgb(255, 203, 211);}
+  #three {background-color: rgb(208, 239, 250);}
+  
