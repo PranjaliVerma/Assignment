@@ -1,0 +1,12 @@
+
+ 
+.circle-stripe {
+  background: repeating-radial-gradient(circle, 
+    #474747, #474747 10px, 
+    #575757 0, #575757 20px);
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+}
