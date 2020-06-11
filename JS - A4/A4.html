@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment 4</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style=" margin:2% 20%; border: 2px solid black; ">
+  <div class="w3-container">
+      <div class="w3-border" style="margin:1% 1%;">
+          <div id="a" class="w3-grey" style="height:24px;width:4%"></div>
+          </div>
+      </div>
+  </div>
+    <h1>Quiz on Idioms and Phrases</h1>
+    <div style="background-color: rgb(173, 197, 241); border: 2px solid black;">
+        <div class="quiz-container" style="border: 1px solid rgb(146, 178, 236); margin:2% 5%; padding:1% 1%; ">
+              <div id="quiz"  ></div>
+       </div>
+            <button id="previous" onclick="myfv()">Previous Question</button>
+            <button id="next" onclick="myff()">Next Question</button>
+            <button id="submit" onclick=" document.getElementById('submit').disabled = true; document.getElementById('submit').style.backgroundColor = 'gray'; document.getElementById('pp').style.border = '1px solid rgb(146, 178, 236)';">Submit Quiz</button>
+       <div id="pp" style="margin:2% 5%; padding:2% 2%;">
+            <div id="results" style="font-weight: bold;"  ></div>
+            <div id="results1" style="font-weight: bold;" ></div>
+            <div id="results2" style="font-weight: bold;" ></div>
+       </div>
+    </div>
+<script src=script.js></script>
+</body>
+</html>
