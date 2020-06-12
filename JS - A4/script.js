@@ -135,7 +135,7 @@
       {
         question: "3. To catch a tartar",
         answers: {
-          a: "ATo trap wanted criminal with great difficulty",
+          a: "To trap wanted criminal with great difficulty",
           b: "To catch a dangerous person",
           c: "To meet with disaster",
         },
@@ -180,7 +180,7 @@
       {
         question: "8. To catch a tartar",
         answers: {
-          a: "ATo trap wanted criminal with great difficulty",
+          a: "To trap wanted criminal with great difficulty",
           b: "To catch a dangerous person",
           c: "To meet with disaster",
         },
@@ -225,7 +225,7 @@
       {
         question: "13. To catch a tartar",
         answers: {
-          a: "ATo trap wanted criminal with great difficulty",
+          a: "To trap wanted criminal with great difficulty",
           b: "To catch a dangerous person",
           c: "To meet with disaster",
         },
@@ -270,7 +270,7 @@
       {
         question: "18. To catch a tartar",
         answers: {
-          a: "ATo trap wanted criminal with great difficulty",
+          a: "To trap wanted criminal with great difficulty",
           b: "To catch a dangerous person",
           c: "To meet with disaster",
         },
@@ -315,7 +315,7 @@
       {
         question: "23. To catch a tartar",
         answers: {
-          a: "ATo trap wanted criminal with great difficulty",
+          a: "To trap wanted criminal with great difficulty",
           b: "To catch a dangerous person",
           c: "To meet with disaster",
         },
